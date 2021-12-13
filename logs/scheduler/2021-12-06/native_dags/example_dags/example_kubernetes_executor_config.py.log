@@ -1,0 +1,14 @@
+[2021-12-06 19:20:55,056] {processor.py:163} INFO - Started process (PID=2252) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-12-06 19:20:55,056] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-12-06 19:20:55,057] {logging_mixin.py:109} INFO - [2021-12-06 19:20:55,057] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-12-06 19:20:55,061] {logging_mixin.py:109} INFO - [2021-12-06 19:20:55,061] {example_kubernetes_executor_config.py:171} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-12-06 19:20:55,061] {logging_mixin.py:109} INFO - [2021-12-06 19:20:55,061] {example_kubernetes_executor_config.py:172} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-12-06 19:20:55,071] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-12-06 19:20:55,073] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.020 seconds
+[2021-12-06 19:21:44,408] {processor.py:163} INFO - Started process (PID=2286) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-12-06 19:21:44,409] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-12-06 19:21:44,410] {logging_mixin.py:109} INFO - [2021-12-06 19:21:44,410] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-12-06 19:21:44,414] {logging_mixin.py:109} INFO - [2021-12-06 19:21:44,414] {example_kubernetes_executor_config.py:171} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-12-06 19:21:44,414] {logging_mixin.py:109} INFO - [2021-12-06 19:21:44,414] {example_kubernetes_executor_config.py:172} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-12-06 19:21:44,424] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-12-06 19:21:44,427] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.021 seconds

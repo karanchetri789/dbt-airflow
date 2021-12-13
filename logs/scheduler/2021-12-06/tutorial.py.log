@@ -1,0 +1,18 @@
+[2021-12-06 19:20:04,140] {processor.py:163} INFO - Started process (PID=2231) to work on /home/karan/airflow/dags/tutorial.py
+[2021-12-06 19:20:04,140] {processor.py:625} INFO - Processing file /home/karan/airflow/dags/tutorial.py for tasks to queue
+[2021-12-06 19:20:04,141] {logging_mixin.py:109} INFO - [2021-12-06 19:20:04,141] {dagbag.py:500} INFO - Filling up the DagBag from /home/karan/airflow/dags/tutorial.py
+[2021-12-06 19:20:04,160] {processor.py:637} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/karan/airflow/dags/tutorial.py
+[2021-12-06 19:20:04,164] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.8/dist-packages/airflow/models/serialized_dag.py:120 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2021-12-06 19:20:04,171] {logging_mixin.py:109} INFO - [2021-12-06 19:20:04,171] {dag.py:2396} INFO - Sync 1 DAGs
+[2021-12-06 19:20:04,186] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.8/dist-packages/airflow/models/dag.py:2433 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2021-12-06 19:20:04,199] {logging_mixin.py:109} INFO - [2021-12-06 19:20:04,199] {dag.py:2928} INFO - Setting next_dagrun for tutorial to 2021-12-05T13:50:04.198113+00:00
+[2021-12-06 19:20:04,560] {processor.py:171} INFO - Processing /home/karan/airflow/dags/tutorial.py took 0.423 seconds
+[2021-12-06 19:21:31,543] {processor.py:163} INFO - Started process (PID=2277) to work on /home/karan/airflow/dags/tutorial.py
+[2021-12-06 19:21:31,586] {processor.py:625} INFO - Processing file /home/karan/airflow/dags/tutorial.py for tasks to queue
+[2021-12-06 19:21:31,587] {logging_mixin.py:109} INFO - [2021-12-06 19:21:31,587] {dagbag.py:500} INFO - Filling up the DagBag from /home/karan/airflow/dags/tutorial.py
+[2021-12-06 19:21:31,609] {processor.py:637} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/karan/airflow/dags/tutorial.py
+[2021-12-06 19:21:31,612] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.8/dist-packages/airflow/models/serialized_dag.py:120 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2021-12-06 19:21:31,614] {logging_mixin.py:109} INFO - [2021-12-06 19:21:31,614] {dag.py:2396} INFO - Sync 1 DAGs
+[2021-12-06 19:21:31,622] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.8/dist-packages/airflow/models/dag.py:2433 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2021-12-06 19:21:31,630] {logging_mixin.py:109} INFO - [2021-12-06 19:21:31,630] {dag.py:2928} INFO - Setting next_dagrun for tutorial to 2021-12-06T13:50:04.198113+00:00
+[2021-12-06 19:21:31,893] {processor.py:171} INFO - Processing /home/karan/airflow/dags/tutorial.py took 0.352 seconds

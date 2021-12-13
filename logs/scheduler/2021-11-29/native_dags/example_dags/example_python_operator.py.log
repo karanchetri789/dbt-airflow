@@ -1,0 +1,612 @@
+[2021-11-29 16:15:06,741] {processor.py:163} INFO - Started process (PID=4911) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:15:06,742] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:15:06,743] {logging_mixin.py:109} INFO - [2021-11-29 16:15:06,743] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:15:07,107] {logging_mixin.py:109} INFO - [2021-11-29 16:15:07,106] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:15:07,135] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:15:07,308] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.570 seconds
+[2021-11-29 16:16:12,648] {processor.py:163} INFO - Started process (PID=5086) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:16:12,667] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:16:12,668] {logging_mixin.py:109} INFO - [2021-11-29 16:16:12,668] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:16:12,778] {logging_mixin.py:109} INFO - [2021-11-29 16:16:12,777] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:16:12,817] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:16:13,243] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.611 seconds
+[2021-11-29 16:17:10,286] {processor.py:163} INFO - Started process (PID=5270) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:17:10,302] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:17:10,303] {logging_mixin.py:109} INFO - [2021-11-29 16:17:10,303] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:17:10,402] {logging_mixin.py:109} INFO - [2021-11-29 16:17:10,401] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:17:10,437] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:17:10,679] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.407 seconds
+[2021-11-29 16:18:04,145] {processor.py:163} INFO - Started process (PID=5438) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:18:04,156] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:18:04,158] {logging_mixin.py:109} INFO - [2021-11-29 16:18:04,158] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:18:04,269] {logging_mixin.py:109} INFO - [2021-11-29 16:18:04,267] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:18:04,322] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:18:04,555] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.425 seconds
+[2021-11-29 16:19:03,828] {processor.py:163} INFO - Started process (PID=5608) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:19:03,857] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:19:03,858] {logging_mixin.py:109} INFO - [2021-11-29 16:19:03,858] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:19:03,977] {logging_mixin.py:109} INFO - [2021-11-29 16:19:03,973] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:19:03,994] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:19:04,199] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.386 seconds
+[2021-11-29 16:19:59,252] {processor.py:163} INFO - Started process (PID=5777) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:19:59,272] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:19:59,278] {logging_mixin.py:109} INFO - [2021-11-29 16:19:59,278] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:19:59,404] {logging_mixin.py:109} INFO - [2021-11-29 16:19:59,402] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:19:59,456] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:19:59,705] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.457 seconds
+[2021-11-29 16:20:52,075] {processor.py:163} INFO - Started process (PID=5950) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:20:52,098] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:20:52,099] {logging_mixin.py:109} INFO - [2021-11-29 16:20:52,098] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:20:52,218] {logging_mixin.py:109} INFO - [2021-11-29 16:20:52,216] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:20:52,233] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:20:52,426] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.356 seconds
+[2021-11-29 16:21:46,445] {processor.py:163} INFO - Started process (PID=6119) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:21:46,454] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:21:46,455] {logging_mixin.py:109} INFO - [2021-11-29 16:21:46,455] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:21:46,548] {logging_mixin.py:109} INFO - [2021-11-29 16:21:46,547] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:21:46,609] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:21:46,769] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.339 seconds
+[2021-11-29 16:22:45,367] {processor.py:163} INFO - Started process (PID=6302) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:22:45,402] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:22:45,403] {logging_mixin.py:109} INFO - [2021-11-29 16:22:45,402] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:22:45,513] {logging_mixin.py:109} INFO - [2021-11-29 16:22:45,511] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:22:45,540] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:22:45,796] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.455 seconds
+[2021-11-29 16:23:39,159] {processor.py:163} INFO - Started process (PID=6472) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:23:39,170] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:23:39,171] {logging_mixin.py:109} INFO - [2021-11-29 16:23:39,170] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:23:39,268] {logging_mixin.py:109} INFO - [2021-11-29 16:23:39,266] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:23:39,309] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:23:39,466] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.332 seconds
+[2021-11-29 16:24:38,874] {processor.py:163} INFO - Started process (PID=6632) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:24:38,910] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:24:38,910] {logging_mixin.py:109} INFO - [2021-11-29 16:24:38,910] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:24:39,093] {logging_mixin.py:109} INFO - [2021-11-29 16:24:39,091] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:24:39,130] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:24:39,290] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.420 seconds
+[2021-11-29 16:25:38,397] {processor.py:163} INFO - Started process (PID=6807) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:25:38,433] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:25:38,434] {logging_mixin.py:109} INFO - [2021-11-29 16:25:38,434] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:25:38,550] {logging_mixin.py:109} INFO - [2021-11-29 16:25:38,548] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:25:38,580] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:25:38,745] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.365 seconds
+[2021-11-29 16:26:32,563] {processor.py:163} INFO - Started process (PID=6974) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:26:32,585] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:26:32,586] {logging_mixin.py:109} INFO - [2021-11-29 16:26:32,585] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:26:32,712] {logging_mixin.py:109} INFO - [2021-11-29 16:26:32,711] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:26:32,749] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:26:32,914] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.357 seconds
+[2021-11-29 16:27:24,985] {processor.py:163} INFO - Started process (PID=7135) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:27:24,987] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:27:24,988] {logging_mixin.py:109} INFO - [2021-11-29 16:27:24,988] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:27:25,179] {logging_mixin.py:109} INFO - [2021-11-29 16:27:25,176] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:27:25,210] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:27:25,373] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.391 seconds
+[2021-11-29 16:28:21,900] {processor.py:163} INFO - Started process (PID=7296) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:28:21,952] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:28:21,954] {logging_mixin.py:109} INFO - [2021-11-29 16:28:21,953] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:28:22,114] {logging_mixin.py:109} INFO - [2021-11-29 16:28:22,113] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:28:22,175] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:28:22,360] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.464 seconds
+[2021-11-29 16:29:20,216] {processor.py:163} INFO - Started process (PID=7458) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:29:20,269] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:29:20,270] {logging_mixin.py:109} INFO - [2021-11-29 16:29:20,270] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:29:20,460] {logging_mixin.py:109} INFO - [2021-11-29 16:29:20,458] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:29:20,488] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:29:20,852] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.651 seconds
+[2021-11-29 16:30:17,357] {processor.py:163} INFO - Started process (PID=7622) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:30:17,404] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:30:17,405] {logging_mixin.py:109} INFO - [2021-11-29 16:30:17,404] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:30:17,566] {logging_mixin.py:109} INFO - [2021-11-29 16:30:17,564] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:30:17,598] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:30:17,822] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.481 seconds
+[2021-11-29 16:31:14,336] {processor.py:163} INFO - Started process (PID=7786) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:31:14,348] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:31:14,349] {logging_mixin.py:109} INFO - [2021-11-29 16:31:14,348] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:31:14,440] {logging_mixin.py:109} INFO - [2021-11-29 16:31:14,439] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:31:14,471] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:31:14,633] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.313 seconds
+[2021-11-29 16:32:08,796] {processor.py:163} INFO - Started process (PID=7948) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:32:08,799] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:32:08,799] {logging_mixin.py:109} INFO - [2021-11-29 16:32:08,799] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:32:08,912] {logging_mixin.py:109} INFO - [2021-11-29 16:32:08,909] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:32:08,940] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:32:09,182] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.400 seconds
+[2021-11-29 16:33:04,562] {processor.py:163} INFO - Started process (PID=8113) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:33:04,565] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:33:04,566] {logging_mixin.py:109} INFO - [2021-11-29 16:33:04,566] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:33:04,753] {logging_mixin.py:109} INFO - [2021-11-29 16:33:04,751] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:33:04,781] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:33:05,027] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.490 seconds
+[2021-11-29 16:33:58,228] {processor.py:163} INFO - Started process (PID=8273) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:33:58,274] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:33:58,275] {logging_mixin.py:109} INFO - [2021-11-29 16:33:58,275] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:33:58,441] {logging_mixin.py:109} INFO - [2021-11-29 16:33:58,439] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:33:58,485] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:33:58,682] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.459 seconds
+[2021-11-29 16:34:54,695] {processor.py:163} INFO - Started process (PID=8440) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:34:54,719] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:34:54,720] {logging_mixin.py:109} INFO - [2021-11-29 16:34:54,719] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:34:54,876] {logging_mixin.py:109} INFO - [2021-11-29 16:34:54,868] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:34:54,917] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:34:55,307] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.629 seconds
+[2021-11-29 16:35:51,319] {processor.py:163} INFO - Started process (PID=8603) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:35:51,325] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:35:51,326] {logging_mixin.py:109} INFO - [2021-11-29 16:35:51,326] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:35:51,505] {logging_mixin.py:109} INFO - [2021-11-29 16:35:51,503] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:35:51,555] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:35:51,739] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.435 seconds
+[2021-11-29 16:36:48,443] {processor.py:163} INFO - Started process (PID=8759) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:36:48,479] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:36:48,480] {logging_mixin.py:109} INFO - [2021-11-29 16:36:48,480] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:36:48,658] {logging_mixin.py:109} INFO - [2021-11-29 16:36:48,655] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:36:48,697] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:36:48,956] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.521 seconds
+[2021-11-29 16:37:43,495] {processor.py:163} INFO - Started process (PID=8921) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:37:43,533] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:37:43,534] {logging_mixin.py:109} INFO - [2021-11-29 16:37:43,534] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:37:43,667] {logging_mixin.py:109} INFO - [2021-11-29 16:37:43,666] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:37:43,706] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:37:43,986] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.506 seconds
+[2021-11-29 16:38:39,260] {processor.py:163} INFO - Started process (PID=9087) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:38:39,274] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:38:39,275] {logging_mixin.py:109} INFO - [2021-11-29 16:38:39,275] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:38:39,435] {logging_mixin.py:109} INFO - [2021-11-29 16:38:39,429] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:38:39,475] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:38:39,706] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.462 seconds
+[2021-11-29 16:39:32,718] {processor.py:163} INFO - Started process (PID=9250) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:39:32,981] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:39:32,982] {logging_mixin.py:109} INFO - [2021-11-29 16:39:32,982] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:39:33,172] {logging_mixin.py:109} INFO - [2021-11-29 16:39:33,171] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:39:33,213] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:39:33,792] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 1.089 seconds
+[2021-11-29 16:40:29,115] {processor.py:163} INFO - Started process (PID=9419) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:40:29,118] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:40:29,119] {logging_mixin.py:109} INFO - [2021-11-29 16:40:29,118] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:40:29,254] {logging_mixin.py:109} INFO - [2021-11-29 16:40:29,248] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:40:29,281] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:40:29,583] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.483 seconds
+[2021-11-29 16:41:26,095] {processor.py:163} INFO - Started process (PID=9577) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:41:26,131] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:41:26,132] {logging_mixin.py:109} INFO - [2021-11-29 16:41:26,132] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:41:26,279] {logging_mixin.py:109} INFO - [2021-11-29 16:41:26,273] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:41:26,318] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:41:26,548] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.467 seconds
+[2021-11-29 16:42:27,513] {processor.py:163} INFO - Started process (PID=9757) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:42:27,517] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:42:27,518] {logging_mixin.py:109} INFO - [2021-11-29 16:42:27,518] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:42:27,613] {logging_mixin.py:109} INFO - [2021-11-29 16:42:27,611] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:42:27,640] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:42:27,805] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.298 seconds
+[2021-11-29 16:43:21,714] {processor.py:163} INFO - Started process (PID=9927) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:43:21,725] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:43:21,726] {logging_mixin.py:109} INFO - [2021-11-29 16:43:21,726] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:43:21,840] {logging_mixin.py:109} INFO - [2021-11-29 16:43:21,838] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:43:21,876] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:43:22,131] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.422 seconds
+[2021-11-29 16:44:14,275] {processor.py:163} INFO - Started process (PID=10081) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:44:14,295] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:44:14,296] {logging_mixin.py:109} INFO - [2021-11-29 16:44:14,296] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:44:14,436] {logging_mixin.py:109} INFO - [2021-11-29 16:44:14,434] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:44:14,477] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:44:14,708] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.437 seconds
+[2021-11-29 16:45:11,816] {processor.py:163} INFO - Started process (PID=10256) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:45:11,848] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:45:11,848] {logging_mixin.py:109} INFO - [2021-11-29 16:45:11,848] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:45:11,952] {logging_mixin.py:109} INFO - [2021-11-29 16:45:11,950] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:45:11,977] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:45:12,146] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.346 seconds
+[2021-11-29 16:46:08,452] {processor.py:163} INFO - Started process (PID=10425) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:46:08,482] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2021-11-29 16:46:08,483] {logging_mixin.py:109} INFO - [2021-11-29 16:46:08,483] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:46:08,587] {logging_mixin.py:109} INFO - [2021-11-29 16:46:08,585] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py", line 84, in <module>
+    virtualenv_task = PythonVirtualenvOperator(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:46:08,636] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py
+[2021-11-29 16:46:08,845] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_python_operator.py took 0.397 seconds

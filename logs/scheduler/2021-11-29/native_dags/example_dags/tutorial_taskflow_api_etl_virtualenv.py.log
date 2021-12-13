@@ -1,0 +1,1088 @@
+[2021-11-29 16:15:08,719] {processor.py:163} INFO - Started process (PID=4916) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:15:08,723] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:15:08,724] {logging_mixin.py:109} INFO - [2021-11-29 16:15:08,724] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:15:08,906] {logging_mixin.py:109} INFO - [2021-11-29 16:15:08,903] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:15:08,933] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:15:09,197] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.482 seconds
+[2021-11-29 16:16:14,488] {processor.py:163} INFO - Started process (PID=5091) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:16:14,501] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:16:14,502] {logging_mixin.py:109} INFO - [2021-11-29 16:16:14,502] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:16:14,648] {logging_mixin.py:109} INFO - [2021-11-29 16:16:14,646] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:16:14,687] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:16:14,963] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.492 seconds
+[2021-11-29 16:17:11,905] {processor.py:163} INFO - Started process (PID=5275) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:17:11,980] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:17:11,980] {logging_mixin.py:109} INFO - [2021-11-29 16:17:11,980] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:17:12,132] {logging_mixin.py:109} INFO - [2021-11-29 16:17:12,129] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:17:12,160] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:17:12,434] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.544 seconds
+[2021-11-29 16:18:05,775] {processor.py:163} INFO - Started process (PID=5443) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:18:05,822] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:18:05,823] {logging_mixin.py:109} INFO - [2021-11-29 16:18:05,822] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:18:05,923] {logging_mixin.py:109} INFO - [2021-11-29 16:18:05,919] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:18:05,950] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:18:06,169] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.409 seconds
+[2021-11-29 16:19:05,346] {processor.py:163} INFO - Started process (PID=5613) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:19:05,360] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:19:05,361] {logging_mixin.py:109} INFO - [2021-11-29 16:19:05,361] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:19:05,500] {logging_mixin.py:109} INFO - [2021-11-29 16:19:05,497] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:19:05,525] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:19:05,689] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.369 seconds
+[2021-11-29 16:20:00,889] {processor.py:163} INFO - Started process (PID=5782) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:20:00,942] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:20:00,943] {logging_mixin.py:109} INFO - [2021-11-29 16:20:00,943] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:20:01,075] {logging_mixin.py:109} INFO - [2021-11-29 16:20:01,069] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:20:01,109] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:20:01,359] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.485 seconds
+[2021-11-29 16:20:53,596] {processor.py:163} INFO - Started process (PID=5954) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:20:53,676] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:20:53,677] {logging_mixin.py:109} INFO - [2021-11-29 16:20:53,677] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:20:53,782] {logging_mixin.py:109} INFO - [2021-11-29 16:20:53,776] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:20:53,820] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:20:54,004] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.414 seconds
+[2021-11-29 16:21:46,985] {processor.py:163} INFO - Started process (PID=6120) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:21:47,022] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:21:47,022] {logging_mixin.py:109} INFO - [2021-11-29 16:21:47,022] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:21:47,129] {logging_mixin.py:109} INFO - [2021-11-29 16:21:47,126] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:21:47,158] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:21:47,319] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.349 seconds
+[2021-11-29 16:22:46,967] {processor.py:163} INFO - Started process (PID=6308) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:22:47,015] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:22:47,016] {logging_mixin.py:109} INFO - [2021-11-29 16:22:47,016] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:22:47,174] {logging_mixin.py:109} INFO - [2021-11-29 16:22:47,170] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:22:47,216] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:22:47,696] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.734 seconds
+[2021-11-29 16:23:40,800] {processor.py:163} INFO - Started process (PID=6478) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:23:40,841] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:23:40,842] {logging_mixin.py:109} INFO - [2021-11-29 16:23:40,842] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:23:40,943] {logging_mixin.py:109} INFO - [2021-11-29 16:23:40,940] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:23:40,970] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:23:41,130] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.334 seconds
+[2021-11-29 16:24:40,628] {processor.py:163} INFO - Started process (PID=6637) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:24:40,669] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:24:40,670] {logging_mixin.py:109} INFO - [2021-11-29 16:24:40,670] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:24:40,792] {logging_mixin.py:109} INFO - [2021-11-29 16:24:40,790] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:24:40,819] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:24:41,102] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.488 seconds
+[2021-11-29 16:25:39,907] {processor.py:163} INFO - Started process (PID=6812) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:25:39,925] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:25:39,926] {logging_mixin.py:109} INFO - [2021-11-29 16:25:39,926] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:25:40,040] {logging_mixin.py:109} INFO - [2021-11-29 16:25:40,037] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:25:40,066] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:25:40,322] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.431 seconds
+[2021-11-29 16:26:33,484] {processor.py:163} INFO - Started process (PID=6978) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:26:33,542] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:26:33,544] {logging_mixin.py:109} INFO - [2021-11-29 16:26:33,543] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:26:33,652] {logging_mixin.py:109} INFO - [2021-11-29 16:26:33,648] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:26:33,678] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:26:33,846] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.366 seconds
+[2021-11-29 16:27:26,846] {processor.py:163} INFO - Started process (PID=7140) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:27:26,869] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:27:26,869] {logging_mixin.py:109} INFO - [2021-11-29 16:27:26,869] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:27:27,019] {logging_mixin.py:109} INFO - [2021-11-29 16:27:27,015] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:27:27,040] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:27:27,338] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.506 seconds
+[2021-11-29 16:28:23,546] {processor.py:163} INFO - Started process (PID=7299) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:28:23,559] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:28:23,560] {logging_mixin.py:109} INFO - [2021-11-29 16:28:23,559] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:28:23,753] {logging_mixin.py:109} INFO - [2021-11-29 16:28:23,750] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:28:23,798] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:28:24,016] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.486 seconds
+[2021-11-29 16:29:22,078] {processor.py:163} INFO - Started process (PID=7463) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:29:22,098] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:29:22,099] {logging_mixin.py:109} INFO - [2021-11-29 16:29:22,099] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:29:22,216] {logging_mixin.py:109} INFO - [2021-11-29 16:29:22,214] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:29:22,244] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:29:22,497] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.436 seconds
+[2021-11-29 16:30:18,999] {processor.py:163} INFO - Started process (PID=7626) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:30:19,013] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:30:19,014] {logging_mixin.py:109} INFO - [2021-11-29 16:30:19,014] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:30:19,190] {logging_mixin.py:109} INFO - [2021-11-29 16:30:19,187] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:30:19,214] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:30:19,497] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.502 seconds
+[2021-11-29 16:31:15,835] {processor.py:163} INFO - Started process (PID=7791) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:31:15,845] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:31:15,846] {logging_mixin.py:109} INFO - [2021-11-29 16:31:15,846] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:31:15,962] {logging_mixin.py:109} INFO - [2021-11-29 16:31:15,959] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:31:15,994] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:31:16,265] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.435 seconds
+[2021-11-29 16:32:09,513] {processor.py:163} INFO - Started process (PID=7952) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:32:09,525] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:32:09,526] {logging_mixin.py:109} INFO - [2021-11-29 16:32:09,526] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:32:09,646] {logging_mixin.py:109} INFO - [2021-11-29 16:32:09,642] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:32:09,671] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:32:09,833] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.324 seconds
+[2021-11-29 16:33:06,320] {processor.py:163} INFO - Started process (PID=8117) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:33:06,344] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:33:06,346] {logging_mixin.py:109} INFO - [2021-11-29 16:33:06,345] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:33:06,482] {logging_mixin.py:109} INFO - [2021-11-29 16:33:06,479] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:33:06,531] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:33:06,815] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.511 seconds
+[2021-11-29 16:34:00,087] {processor.py:163} INFO - Started process (PID=8278) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:34:00,105] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:34:00,106] {logging_mixin.py:109} INFO - [2021-11-29 16:34:00,106] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:34:00,287] {logging_mixin.py:109} INFO - [2021-11-29 16:34:00,280] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:34:00,314] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:34:00,517] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.440 seconds
+[2021-11-29 16:34:56,514] {processor.py:163} INFO - Started process (PID=8446) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:34:56,553] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:34:56,554] {logging_mixin.py:109} INFO - [2021-11-29 16:34:56,553] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:34:56,668] {logging_mixin.py:109} INFO - [2021-11-29 16:34:56,665] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:34:56,712] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:34:57,094] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.592 seconds
+[2021-11-29 16:35:52,976] {processor.py:163} INFO - Started process (PID=8607) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:35:53,000] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:35:53,002] {logging_mixin.py:109} INFO - [2021-11-29 16:35:53,002] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:35:53,212] {logging_mixin.py:109} INFO - [2021-11-29 16:35:53,209] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:35:53,243] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:35:53,468] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.527 seconds
+[2021-11-29 16:36:49,554] {processor.py:163} INFO - Started process (PID=8764) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:36:49,567] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:36:49,568] {logging_mixin.py:109} INFO - [2021-11-29 16:36:49,568] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:36:49,684] {logging_mixin.py:109} INFO - [2021-11-29 16:36:49,681] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:36:49,710] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:36:49,888] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.339 seconds
+[2021-11-29 16:37:45,232] {processor.py:163} INFO - Started process (PID=8927) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:37:45,260] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:37:45,262] {logging_mixin.py:109} INFO - [2021-11-29 16:37:45,261] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:37:45,429] {logging_mixin.py:109} INFO - [2021-11-29 16:37:45,425] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:37:45,467] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:37:45,686] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.461 seconds
+[2021-11-29 16:38:41,141] {processor.py:163} INFO - Started process (PID=9092) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:38:41,145] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:38:41,146] {logging_mixin.py:109} INFO - [2021-11-29 16:38:41,146] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:38:41,300] {logging_mixin.py:109} INFO - [2021-11-29 16:38:41,297] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:38:41,328] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:38:41,554] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.431 seconds
+[2021-11-29 16:39:35,399] {processor.py:163} INFO - Started process (PID=9257) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:39:35,420] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:39:35,421] {logging_mixin.py:109} INFO - [2021-11-29 16:39:35,421] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:39:35,549] {logging_mixin.py:109} INFO - [2021-11-29 16:39:35,546] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:39:35,589] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:39:35,825] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.441 seconds
+[2021-11-29 16:40:29,897] {processor.py:163} INFO - Started process (PID=9421) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:40:29,941] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:40:29,942] {logging_mixin.py:109} INFO - [2021-11-29 16:40:29,942] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:40:30,094] {logging_mixin.py:109} INFO - [2021-11-29 16:40:30,089] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:40:30,125] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:40:30,349] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.468 seconds
+[2021-11-29 16:41:27,786] {processor.py:163} INFO - Started process (PID=9582) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:41:27,820] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:41:27,821] {logging_mixin.py:109} INFO - [2021-11-29 16:41:27,821] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:41:27,951] {logging_mixin.py:109} INFO - [2021-11-29 16:41:27,948] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:41:28,002] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:41:28,316] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.537 seconds
+[2021-11-29 16:42:29,032] {processor.py:163} INFO - Started process (PID=9762) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:42:29,037] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:42:29,037] {logging_mixin.py:109} INFO - [2021-11-29 16:42:29,037] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:42:29,154] {logging_mixin.py:109} INFO - [2021-11-29 16:42:29,152] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:42:29,207] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:42:29,495] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.475 seconds
+[2021-11-29 16:43:22,556] {processor.py:163} INFO - Started process (PID=9929) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:43:22,575] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:43:22,576] {logging_mixin.py:109} INFO - [2021-11-29 16:43:22,576] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:43:22,699] {logging_mixin.py:109} INFO - [2021-11-29 16:43:22,696] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:43:22,742] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:43:22,921] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.380 seconds
+[2021-11-29 16:44:15,887] {processor.py:163} INFO - Started process (PID=10086) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:44:15,906] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:44:15,907] {logging_mixin.py:109} INFO - [2021-11-29 16:44:15,907] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:44:16,054] {logging_mixin.py:109} INFO - [2021-11-29 16:44:16,049] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:44:16,081] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:44:16,364] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.492 seconds
+[2021-11-29 16:45:13,357] {processor.py:163} INFO - Started process (PID=10261) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:45:13,393] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:45:13,394] {logging_mixin.py:109} INFO - [2021-11-29 16:45:13,394] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:45:13,530] {logging_mixin.py:109} INFO - [2021-11-29 16:45:13,527] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:45:13,558] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:45:13,901] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.561 seconds
+[2021-11-29 16:46:09,124] {processor.py:163} INFO - Started process (PID=10428) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:46:09,160] {processor.py:625} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2021-11-29 16:46:09,161] {logging_mixin.py:109} INFO - [2021-11-29 16:46:09,161] {dagbag.py:500} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:46:09,271] {logging_mixin.py:109} INFO - [2021-11-29 16:46:09,269] {dagbag.py:334} ERROR - Failed to import: /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 81, in <module>
+    tutorial_etl_dag = tutorial_taskflow_api_etl_virtualenv()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/dag.py", line 2977, in factory
+    f(**f_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py", line 76, in tutorial_taskflow_api_etl_virtualenv
+    order_data = extract()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 219, in factory
+    op = decorated_operator_class(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/python_virtualenv.py", line 61, in __init__
+    super().__init__(kwargs_to_upstream=kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/decorators/base.py", line 131, in __init__
+    super().__init__(**kwargs_to_upstream, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 342, in __init__
+    raise AirflowException('PythonVirtualenvOperator requires virtualenv, please install it.')
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2021-11-29 16:46:09,304] {processor.py:639} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2021-11-29 16:46:09,466] {processor.py:171} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.347 seconds
